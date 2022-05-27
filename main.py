@@ -7,19 +7,8 @@ import numpy as np
 def magnitude(x, y):
     return np.sqrt(x**2 + y**2)
 
-
-#Plot Functions
-def test_func(x, y):
-    if(x == 0 and y == 0):
-        return 0
-    return -y/(x**2 +y**2)
-    # return x*y
-
-def test_func2(x, y):
-    if(x == 0 and y == 0):
-        return 0
-    return x/(x**2 +y**2)
-    # return x**2
+test_func = eval('lambda x, y: ' + input('Test X: '))
+test_func2 = eval('lambda x, y: ' + input('Test Y: '))
 
 func_x = np.vectorize(test_func)
 func_y = np.vectorize(test_func2)
