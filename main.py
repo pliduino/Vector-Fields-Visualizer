@@ -2,7 +2,6 @@ from calendar import c
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
-import pandas as pd
 
 #Calculates the magnitude of 2D Vectors
 def magnitude(x, y):
