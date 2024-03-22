@@ -7,8 +7,8 @@ def input_func(function):
         return eval('lambda x, y: ' + function)
     except:
         if(function != None):
-            print("Error: ")
-            print(function)
+            print("Error: ", end="")
+            print(function, end="")
             print(" not valid")
         else:
             print("Error")
